@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+guid: 2de7352fa9a3b4a458bd86d236cb1fff
+labels:
+- soomla
+- store
+- storefront
+- icon
+- icons
+- ui
+- unibill
+- prime31
+- iap
+- billing
+- inapppurchase
+- 2d
+- coins
+- shop
+TrueTypeFontImporter:
+  serializedVersion: 2
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 1
+  characterPadding: 0
+  includeFontData: 1
+  use2xBehaviour: 0
+  fontNames: []
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
