@@ -1,6 +1,13 @@
 fileFormatVersion: 2
 guid: b04c69d2b8def614f9c3f89d2989beb2
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: SpinningCoin_0
+    21300002: SpinningCoin_1
+    21300004: SpinningCoin_2
+    21300006: SpinningCoin_3
+    21300008: SpinningCoin_4
+    21300010: SpinningCoin_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -14,11 +21,14 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 1024
@@ -29,12 +39,15 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
+  rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
@@ -43,6 +56,7 @@ TextureImporter:
     maxTextureSize: 1024
     textureFormat: -2
     compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
     sprites:
     - name: SpinningCoin_0
@@ -54,6 +68,14 @@ TextureImporter:
         height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -54, y: 59}
+        - {x: -54, y: -58}
+        - {x: 48, y: -58}
+        - {x: 53, y: -37}
+        - {x: 53, y: 45}
+        - {x: 23, y: 59}
     - name: SpinningCoin_1
       rect:
         serializedVersion: 2
@@ -63,6 +85,16 @@ TextureImporter:
         height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 59}
+        - {x: -29, y: 46}
+        - {x: -33, y: 37}
+        - {x: -33, y: -28}
+        - {x: -20, y: -58}
+        - {x: 32, y: -58}
+        - {x: 32, y: 53}
+        - {x: 20, y: 59}
     - name: SpinningCoin_2
       rect:
         serializedVersion: 2
@@ -72,6 +104,18 @@ TextureImporter:
         height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 59}
+        - {x: -8, y: 55}
+        - {x: -11, y: 29}
+        - {x: -11, y: -41}
+        - {x: -7, y: -58}
+        - {x: 0, y: -58}
+        - {x: 1, y: -57}
+        - {x: 10, y: -47}
+        - {x: 10, y: 58}
+        - {x: 5, y: 59}
     - name: SpinningCoin_3
       rect:
         serializedVersion: 2
@@ -81,6 +125,17 @@ TextureImporter:
         height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 57}
+        - {x: -5, y: 57}
+        - {x: -16, y: 45}
+        - {x: -16, y: -37}
+        - {x: -10, y: -61}
+        - {x: 9, y: -61}
+        - {x: 13, y: -46}
+        - {x: 13, y: 50}
+        - {x: 4, y: 56}
     - name: SpinningCoin_4
       rect:
         serializedVersion: 2
@@ -90,6 +145,16 @@ TextureImporter:
         height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 58}
+        - {x: -11, y: 43}
+        - {x: -11, y: -30}
+        - {x: -9, y: -59}
+        - {x: 2, y: -59}
+        - {x: 10, y: -45}
+        - {x: 10, y: 41}
+        - {x: 7, y: 58}
     - name: SpinningCoin_5
       rect:
         serializedVersion: 2
@@ -99,5 +164,18 @@ TextureImporter:
         height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 57}
+        - {x: -33, y: 23}
+        - {x: -33, y: -22}
+        - {x: -15, y: -60}
+        - {x: 29, y: -60}
+        - {x: 32, y: -44}
+        - {x: 32, y: 47}
+        - {x: 13, y: 57}
+    outline: []
   spritePackingTag: 
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 
