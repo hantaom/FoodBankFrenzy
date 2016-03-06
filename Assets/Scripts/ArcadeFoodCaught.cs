@@ -1,40 +1,29 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FoodObjectCaught : MonoBehaviour {
-
-<<<<<<< HEAD
-
-    //private FrenzyGameController gameController;
+public class ArcadeFoodCaught : MonoBehaviour
+{
 
     private ArcadeGameController gameController;
-=======
-    private GameController gameController;
-    
+    bool drop = false;
     bool bounce = false;
     int upTime = 0;
+    int scaleTime = 0;
 
     float up = (float)0.05;
-    float forward = (float)0.01;
->>>>>>> ec6bbf34a985c33bf0b4cf51f93d40382ab41a15
-
-
+    float forward = (float)0.1;
     void Start()
     {
         GameObject gameControllerObject = GameObject.FindWithTag("GameController");
         if (gameControllerObject != null)
         {
-
-            //gameController = gameControllerObject.GetComponent<FrenzyGameController>();
-
             gameController = gameControllerObject.GetComponent<ArcadeGameController>();
-
         }
     }
 
     void Update()
     {
-        if (bounce)
+        if (drop)
         {
             if (upTime < 50)
             {
@@ -42,14 +31,14 @@ public class FoodObjectCaught : MonoBehaviour {
             }
             else
             {
-                up = up - 0.005F;
+                //up = up - 0.005F;
             }
 
 
             transform.position = new Vector3(transform.position.x, transform.position.y - up, transform.position.z);
 
-            
-            up = up - 0.003F;
+
+            //up = up - 0.003F;
             if (up < 0)
             {
                 up = 0;
@@ -58,18 +47,34 @@ public class FoodObjectCaught : MonoBehaviour {
             upTime++;
         }
 
+        if (bounce)
+        {
+            if (scaleTime < 60)
+            {
+                transform.localScale += new Vector3(-0.008F, -0.008F, -0.008F);
+
+            }
+            transform.position = new Vector3(transform.position.x, transform.position.y + forward, transform.position.z);
+            forward -= 0.005F;
+            if (forward < 0)
+            {
+                Destroy(gameObject);
+            }
+
+            scaleTime++;
+        }
+
 
 
 
     }
     void OnTriggerEnter(Collider other)
-    {   
+    {
         if (other.gameObject.tag == "Box")
         {
 
             if (gameObject.tag == gameController.getDesiredCategory())
             {
-               
                 gameController.collectDesired();
             }
             else if (gameObject.tag == "Junk")
@@ -80,12 +85,10 @@ public class FoodObjectCaught : MonoBehaviour {
             {
                 gameController.addTime();
             }
+
             else if (gameObject.tag != "Boundary") gameController.collectOther();
-
-
-            bounce = true;
+            drop = true;
             //Destroy(gameObject);
-            
         }
 
     }

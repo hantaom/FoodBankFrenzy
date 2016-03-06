@@ -114,8 +114,9 @@ public class ArcadeGameController : MonoBehaviour
 
     public void GameOver()
     {
-        gameOver = true;
         gameOverText.text = "Your score is: " + score;
+        gameOver = true;
+        
 
     }
     public void pause()

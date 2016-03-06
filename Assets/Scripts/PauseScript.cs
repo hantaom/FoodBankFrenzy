@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PauseScript : MonoBehaviour {
     bool paused;
-    private GameController gameController;
+    private ArcadeGameController gameController;
     
     private Animator cameraAnimator;
     // Use this for initialization
@@ -12,7 +12,7 @@ public class PauseScript : MonoBehaviour {
         GameObject gameControllerObject = GameObject.FindWithTag("GameController");
         if (gameControllerObject != null)
         {
-            gameController = gameControllerObject.GetComponent<GameController>();
+            gameController = gameControllerObject.GetComponent<ArcadeGameController>();
         }
     }
 	
