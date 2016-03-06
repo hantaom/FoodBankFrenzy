@@ -24,6 +24,7 @@ public class GameController : MonoBehaviour {
     public Text timerText;
     public Text scoreText;
     public Text categoryText;
+    public Text gameOverText;
   
 
     private bool gameOver;
@@ -67,12 +68,12 @@ public class GameController : MonoBehaviour {
         seconds = Mathf.FloorToInt(totalTime - minutes * 60);
         updateTime();
         updateScore();
-        updateText();
-
+        if(!gameOver) updateText();
         if (totalTime < 1)
         {
             GameOver();
         }
+        
 
     }
 
@@ -84,6 +85,7 @@ public class GameController : MonoBehaviour {
            for (int i = 0; i < numObjects; i++){
                 if (!paused)
                 {
+
                     if (gameOver) break;
                     Vector3 spawnPos = new Vector3(UnityEngine.Random.Range(minX, maxX), spawnLocation.y, spawnLocation.z);
                     GameObject foodObject = randomFood();
@@ -105,7 +107,8 @@ public class GameController : MonoBehaviour {
    public void GameOver()
     {
         gameOver = true;
-        
+        gameOverText.text = "Your score is: " + score;
+
     }
     public void pause()
     {
