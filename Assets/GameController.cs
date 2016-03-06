@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 
@@ -7,33 +8,51 @@ public class GameController : MonoBehaviour {
     public float maxX;
     public float minX;
     public GameObject foodObject;
+    public Text timerText;
+    public Text scoreText;
   
 
     private bool gameOver;
     private bool restart;
     private int score;
-    private float time;
+    private float totalTime;
+    private int minutes;
+    private int seconds;
     private int numObjects;
     private int startWait;
     private bool paused;
     private int spawnWait;
+    private int waveWait;
+    private string desiredObject;
 
 	void Start () {
         gameOver = false;
         restart = false;
         paused = false;
         score = 0;
-        time = 180;
+        totalTime = 15f;
         numObjects = 10;
+        waveWait = 0;
         startWait = 3;
-        spawnWait = 2;
+        spawnWait = 1;
+        desiredObject = "Fruit";
         StartCoroutine(SpawnObjects());
 	}
 	
-	// Update is called once per frame
+	
 	void Update () {
-
-
+        if (totalTime > 1)
+        {
+            totalTime -= Time.deltaTime;
+        }
+        minutes = Mathf.FloorToInt(totalTime / 60F);
+        seconds = Mathf.FloorToInt(totalTime - minutes * 60);
+        updateTime();
+        updateScore();
+        if (totalTime < 1)
+        {
+            GameOver();
+        }
     }
 
     IEnumerator SpawnObjects()
@@ -41,20 +60,22 @@ public class GameController : MonoBehaviour {
         yield return new WaitForSeconds(startWait);
         while (true)
         {
-           
-                for (int i = 0; i < numObjects; i++)
-                {
+           for (int i = 0; i < numObjects; i++){
                 if (!paused)
                 {
+                    if (gameOver) break;
                     Vector3 spawnPos = new Vector3(Random.Range(minX, maxX), spawnLocation.y, spawnLocation.z);
                     Instantiate(foodObject, spawnPos, foodObject.transform.rotation);
                     yield return new WaitForSeconds(spawnWait);
                 }
-                }
-                //yield return new WaitForSeconds(waveWait);
-
-            
+            }
+            yield return new WaitForSeconds(waveWait);
         }
+    }
+
+    void updateTime()
+    {
+        timerText.text = string.Format("{0:0}:{1:00}", minutes, seconds);
     }
 
    void GameOver()
@@ -72,5 +93,37 @@ public class GameController : MonoBehaviour {
         {
             Time.timeScale = 1;
         }
+    }
+
+    public string getDesiredObject()
+    {
+        return desiredObject;
+    }
+    public void collectDesired()
+    {
+        score += 10;
+        updateScore();
+    }
+    public void collectJunk()
+    {
+        score -= 20;
+        if(score < 0)
+        {
+            score = 0;
+        }
+        updateScore();
+    }
+    public void collectOther()
+    {
+        score -= 10;
+        if (score < 0)
+        {
+            score = 0;
+        }
+        updateScore();
+    }
+    public void updateScore()
+    {
+        scoreText.text = "" + score;
     }
 }
