@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour {
     public Text scoreText;
   
 
-    private bool gameOver;
+    public bool gameOver;
     private bool restart;
     private int score;
     private float totalTime;
@@ -25,7 +25,8 @@ public class GameController : MonoBehaviour {
     private int waveWait;
     private string desiredObject;
 
-	void Start () {
+
+    void Start () {
         gameOver = false;
         restart = false;
         paused = false;
@@ -37,7 +38,7 @@ public class GameController : MonoBehaviour {
         spawnWait = 1;
         desiredObject = "Fruit";
         StartCoroutine(SpawnObjects());
-	}
+    }
 	
 	
 	void Update () {
@@ -52,6 +53,9 @@ public class GameController : MonoBehaviour {
         if (totalTime < 1)
         {
             GameOver();
+            
+
+
         }
     }
 
@@ -78,9 +82,10 @@ public class GameController : MonoBehaviour {
         timerText.text = string.Format("{0:0}:{1:00}", minutes, seconds);
     }
 
-   void GameOver()
+   public void GameOver()
     {
         gameOver = true;
+        
     }
     public void pause()
     {
