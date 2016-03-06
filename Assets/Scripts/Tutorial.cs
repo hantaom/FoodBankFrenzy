@@ -21,6 +21,6 @@ public class Tutorial : MonoBehaviour {
 
     public void startGame()
     {
-        cameraAnimator.SetInteger(cameraState, 4);
+        Application.LoadLevel("Main1");
     }
 }

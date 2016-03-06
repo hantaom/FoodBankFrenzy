@@ -69,8 +69,8 @@ public class engine : MonoBehaviour {
     }
 
     public void gameFinished(){
-		//aSource [0].Play ();
-		cameraAnimator.SetInteger (cameraState, 0);
+        //aSource [0].Play ();
+        Application.LoadLevel("Main");
 		//saveGame ();
 		//currentLevel++;
 		//nrOfMoves = 0;

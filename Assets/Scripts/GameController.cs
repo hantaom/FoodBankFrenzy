@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
 
@@ -48,7 +49,7 @@ public class GameController : MonoBehaviour {
         restart = false;
         paused = false;
         score = 0;
-        totalTime = 180f;
+        totalTime = 60f;
         numObjects = 20;
         waveWait = 1;
         startWait = 3;
@@ -87,7 +88,9 @@ public class GameController : MonoBehaviour {
                 if (!paused)
                 {
 
-                    if (gameOver) break;
+                    if (gameOver) { 
+                    break;
+                }
                     Vector3 spawnPos = new Vector3(UnityEngine.Random.Range(minX, maxX), spawnLocation.y, spawnLocation.z);
                     GameObject foodObject = randomFood();
                     Instantiate(foodObject, spawnPos, foodObject.transform.rotation);
@@ -108,7 +111,8 @@ public class GameController : MonoBehaviour {
    public void GameOver()
     {
         gameOver = true;
-        gameOverText.text = "Your score is: " + score;
+        SceneManager.LoadScene("Exit");
+        
 
     }
     public void pause()
