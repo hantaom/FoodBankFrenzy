@@ -17,7 +17,7 @@ public class SetFrenzy : MonoBehaviour {
     public void startGame()
     {
 
-        cameraAnimator.SetInteger(cameraState, 2);
+        Application.LoadLevel("FrenzyMode");
         //this.gameObject.GetComponent<levelHandler> ().loadLevel (currentLevel);
 
     }

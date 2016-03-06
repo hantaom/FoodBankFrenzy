@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SetArcade : MonoBehaviour {
+public class Tutorial : MonoBehaviour {
 
     private int cameraState = Animator.StringToHash("moveCamera");
     private Animator cameraAnimator;
@@ -14,16 +14,13 @@ public class SetArcade : MonoBehaviour {
         //aSource = this.GetComponents<AudioSource> ();
     }
 
-    public void startGame()
-    {
-
-        Application.LoadLevel("ArcadeMode");
-        //this.gameObject.GetComponent<levelHandler> ().loadLevel (currentLevel);
-
-    }
-
     // Update is called once per frame
     void Update () {
 	
 	}
+
+    public void startGame()
+    {
+        cameraAnimator.SetInteger(cameraState, 4);
+    }
 }

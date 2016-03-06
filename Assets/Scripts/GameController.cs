@@ -25,7 +25,7 @@ public class GameController : MonoBehaviour {
     private int spawnWait;
     private int waveWait;
     private string desiredCategory;
-    
+
 
 
     void Start () {
@@ -40,6 +40,7 @@ public class GameController : MonoBehaviour {
         spawnWait = 1;
         pickBrandNewCategory();
         StartCoroutine(SpawnObjects());
+
     }
 	
 	
@@ -59,6 +60,7 @@ public class GameController : MonoBehaviour {
 
 
         }
+
     }
 
     IEnumerator SpawnObjects()
@@ -83,6 +85,7 @@ public class GameController : MonoBehaviour {
     void updateTime()
     {
         timerText.text = string.Format("{0:0}:{1:00}", minutes, seconds);
+    
     }
 
    public void GameOver()
