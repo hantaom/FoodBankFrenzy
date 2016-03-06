@@ -1,0 +1,121 @@
+fileFormatVersion: 2
+guid: c2b5de537cf93a84c8af862a8102c056
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Ground
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 587
+        width: 762
+        height: 369
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Brain
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 832
+        width: 168
+        height: 117
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Spring
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 579
+        width: 110
+        height: 119
+      alignment: 2
+      pivot: {x: .5, y: 1}
+    - name: Rock
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 279
+        width: 405
+        height: 213
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Trap
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 272
+        width: 224
+        height: 224
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Coin
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 327
+        width: 104
+        height: 113
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Cloud
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 36
+        width: 496
+        height: 220
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Bush
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 37
+        width: 406
+        height: 219
+      alignment: 0
+      pivot: {x: .5, y: .5}
+  spritePackingTag: 
+  userData: 

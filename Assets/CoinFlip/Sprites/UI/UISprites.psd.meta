@@ -1,0 +1,140 @@
+fileFormatVersion: 2
+guid: 3d9a765bf1bec674c99331fb9acec511
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Title
+    21300002: Button_01
+    21300004: Timer_Fill
+    21300006: Timer_Icon
+    21300008: Timer_Overlay
+    21300010: Coin_Icon
+    21300012: Lives_Icon
+    21300014: Button_02
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Title
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 775
+        width: 736
+        height: 241
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Button_01
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 514
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 30, y: 30, z: 30, w: 30}
+    - name: Timer_Fill
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 547
+        width: 463
+        height: 162
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Timer_Icon
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 527
+        width: 220
+        height: 222
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Timer_Overlay
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 298
+        width: 502
+        height: 149
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Coin_Icon
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 268
+        width: 211
+        height: 229
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lives_Icon
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 260
+        width: 235
+        height: 244
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Button_02
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 19
+        width: 505
+        height: 211
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
