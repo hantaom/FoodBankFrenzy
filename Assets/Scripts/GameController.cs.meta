@@ -1,10 +1,27 @@
 fileFormatVersion: 2
 guid: 5bd26964fbc140846b0d454577eba520
-timeCreated: 1457226591
+timeCreated: 1457281272
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - foodObject1: {fileID: 130448, guid: c88e79b68c6755245b5303ca38ce216d, type: 2}
+  - foodObject2: {fileID: 127882, guid: 5094f643af2ddf34285c8a0138b06027, type: 2}
+  - foodObject3: {fileID: 109020, guid: 044b00e7b7ef9fd45a12dd63496a259d, type: 2}
+  - foodObject4: {fileID: 177684, guid: 92fbe313b9090764c8f722f3ef87959b, type: 2}
+  - foodObject5: {fileID: 181494, guid: b2312482e0574274ab2ee95fad909ebf, type: 2}
+  - foodObject6: {fileID: 146836, guid: e2e69d131a7d7bd47a38fa2a5ceda065, type: 2}
+  - foodObject7: {fileID: 152248, guid: 7ade0374e64ee8f478a9871533f4c2dc, type: 2}
+  - foodObject8: {fileID: 191390, guid: ea4e0117193ed4d4086e7ac2a4b331ec, type: 2}
+  - foodObject9: {fileID: 167548, guid: ae622151fda97ec45971e5bfebf7402c, type: 2}
+  - foodObject10: {fileID: 185904, guid: 98f2c279ea246bd42a61ed8279988e06, type: 2}
+  - foodObject11: {fileID: 151454, guid: f06797299bb47c74e946b6214ce63e2b, type: 2}
+  - foodObject12: {fileID: 183336, guid: 289b4cba057e69a4da5ed363a967153b, type: 2}
+  - foodObject13: {fileID: 147524, guid: 476bf55a1d1fdee4dbbe0c328fe96233, type: 2}
+  - timerText: {instanceID: 0}
+  - scoreText: {instanceID: 0}
+  - categoryText: {instanceID: 0}
+  - gameOverText: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -3,14 +3,14 @@ using System.Collections;
 
 public class FoodObjectCaught : MonoBehaviour {
 
-    private GameController gameController;
+    private FrenzyGameController gameController;
 
     void Start()
     {
         GameObject gameControllerObject = GameObject.FindWithTag("GameController");
         if (gameControllerObject != null)
         {
-            gameController = gameControllerObject.GetComponent<GameController>();
+            gameController = gameControllerObject.GetComponent<FrenzyGameController>();
         }
     }
     void OnTriggerEnter(Collider other)
