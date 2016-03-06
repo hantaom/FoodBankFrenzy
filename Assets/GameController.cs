@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System;
 
 public class GameController : MonoBehaviour {
 
@@ -23,19 +24,20 @@ public class GameController : MonoBehaviour {
     private bool paused;
     private int spawnWait;
     private int waveWait;
-    private string desiredObject;
+    private string desiredCategory;
+    
 
 	void Start () {
         gameOver = false;
         restart = false;
         paused = false;
         score = 0;
-        totalTime = 15f;
-        numObjects = 10;
-        waveWait = 0;
+        totalTime = 180f;
+        numObjects = 20;
+        waveWait = 1;
         startWait = 3;
         spawnWait = 1;
-        desiredObject = "Fruit";
+        pickBrandNewCategory();
         StartCoroutine(SpawnObjects());
 	}
 	
@@ -64,11 +66,12 @@ public class GameController : MonoBehaviour {
                 if (!paused)
                 {
                     if (gameOver) break;
-                    Vector3 spawnPos = new Vector3(Random.Range(minX, maxX), spawnLocation.y, spawnLocation.z);
+                    Vector3 spawnPos = new Vector3(UnityEngine.Random.Range(minX, maxX), spawnLocation.y, spawnLocation.z);
                     Instantiate(foodObject, spawnPos, foodObject.transform.rotation);
                     yield return new WaitForSeconds(spawnWait);
                 }
             }
+            pickNewCategory(desiredCategory);
             yield return new WaitForSeconds(waveWait);
         }
     }
@@ -95,9 +98,8 @@ public class GameController : MonoBehaviour {
         }
     }
 
-    public string getDesiredObject()
-    {
-        return desiredObject;
+    public string getDesiredCategory() { 
+        return desiredCategory;
     }
     public void collectDesired()
     {
@@ -125,5 +127,46 @@ public class GameController : MonoBehaviour {
     public void updateScore()
     {
         scoreText.text = "" + score;
+    }
+    void pickBrandNewCategory()
+    {
+      System.Random rnd = new System.Random();
+      int rand = rnd.Next(1, 4);
+      switch (rand)
+            {
+                case 1:
+                    desiredCategory = "Fruit";
+                    break;
+                case 2:
+                    desiredCategory = "CannedFood";
+                    break;
+                case 3:
+                    desiredCategory = "Carbs";
+                    break;
+            } 
+    }
+    void pickNewCategory(String category)
+    {
+        if (category == "Fruit")
+        {
+            pickBetween("CannedFood", "Carbs");
+        } else if (category == "Carbs")
+        {
+            pickBetween("Fruit", "CannedFood");
+        } else pickBetween("Carbs", "Fruit");
+    }
+    void pickBetween(String opt1, String opt2)
+    {
+        System.Random rnd = new System.Random();
+        int rand = rnd.Next(1, 3);
+        switch (rand)
+        {
+            case 1:
+                desiredCategory = opt1;
+                break;
+            case 2:
+                desiredCategory = opt2;
+                break;
+        }
     }
 }

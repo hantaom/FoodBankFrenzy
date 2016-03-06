@@ -9,10 +9,6 @@ public class DestroyByBoundary : MonoBehaviour {
 
     void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Object")
-        {
-            Destroy(other.gameObject);
-        }
-
+        Destroy(other.gameObject);
     }
 }
