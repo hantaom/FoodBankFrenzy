@@ -18,12 +18,12 @@ public class pauseMenuScript : MonoBehaviour {
     {
         if (!moved)
         {
-            transform.position = new Vector3(transform.position.x - 2.89F, transform.position.y, transform.position.z);
+            transform.position = new Vector3(transform.position.x - 3.02F, transform.position.y, transform.position.z);
             moved = true;
         }
         else
         {
-            transform.position = new Vector3(transform.position.x + 2.89F, transform.position.y, transform.position.z);
+            transform.position = new Vector3(transform.position.x + 3.02F, transform.position.y, transform.position.z);
             moved = false;
         }
     }
