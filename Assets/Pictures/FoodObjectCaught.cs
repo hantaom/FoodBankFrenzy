@@ -3,14 +3,14 @@ using System.Collections;
 
 public class FoodObjectCaught : MonoBehaviour {
 
-    private GameController gameController;
+    private ArcadeGameController gameController;
 
     void Start()
     {
         GameObject gameControllerObject = GameObject.FindWithTag("GameController");
         if (gameControllerObject != null)
         {
-            gameController = gameControllerObject.GetComponent<GameController>();
+            gameController = gameControllerObject.GetComponent<ArcadeGameController>();
         }
     }
     void OnTriggerEnter(Collider other)
@@ -25,6 +25,10 @@ public class FoodObjectCaught : MonoBehaviour {
             else if (gameObject.tag == "Junk")
             {
                 gameController.collectJunk();
+            }
+            else if (gameObject.tag == "Time")
+            {
+                gameController.addTime();
             }
             else if (gameObject.tag != "Boundary") gameController.collectOther();
 
