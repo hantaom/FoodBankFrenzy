@@ -1,0 +1,167 @@
+fileFormatVersion: 2
+guid: f762dacb5aff27e4aacc75ff2dcc2a20
+timeCreated: 1457271512
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: BezierCircle
+    100004: BezierCircle.001
+    100006: BezierCircle.002
+    100008: BezierCircle.003
+    100010: BezierCircle.004
+    100012: BezierCircle.005
+    100014: BezierCircle.006
+    100016: BezierCircle.007
+    100018: BezierCircle.008
+    100020: Camera
+    100022: Cylinder
+    100024: Lamp
+    100026: Plane
+    100028: Plane.001
+    100030: Plane.002
+    100032: Plane.003
+    100034: Text
+    100036: Text.001
+    100038: Text.002
+    100040: Text.003
+    400000: //RootNode
+    400002: BezierCircle
+    400004: BezierCircle.001
+    400006: BezierCircle.002
+    400008: BezierCircle.003
+    400010: BezierCircle.004
+    400012: BezierCircle.005
+    400014: BezierCircle.006
+    400016: BezierCircle.007
+    400018: BezierCircle.008
+    400020: Camera
+    400022: Cylinder
+    400024: Lamp
+    400026: Plane
+    400028: Plane.001
+    400030: Plane.002
+    400032: Plane.003
+    400034: Text
+    400036: Text.001
+    400038: Text.002
+    400040: Text.003
+    2300000: BezierCircle
+    2300002: BezierCircle.001
+    2300004: BezierCircle.002
+    2300006: BezierCircle.003
+    2300008: BezierCircle.004
+    2300010: BezierCircle.005
+    2300012: BezierCircle.006
+    2300014: BezierCircle.007
+    2300016: BezierCircle.008
+    2300018: Cylinder
+    2300020: Plane
+    2300022: Plane.001
+    2300024: Plane.002
+    2300026: Plane.003
+    2300028: Text
+    2300030: Text.001
+    2300032: Text.002
+    2300034: Text.003
+    3300000: BezierCircle
+    3300002: BezierCircle.001
+    3300004: BezierCircle.002
+    3300006: BezierCircle.003
+    3300008: BezierCircle.004
+    3300010: BezierCircle.005
+    3300012: BezierCircle.006
+    3300014: BezierCircle.007
+    3300016: BezierCircle.008
+    3300018: Cylinder
+    3300020: Plane
+    3300022: Plane.001
+    3300024: Plane.002
+    3300026: Plane.003
+    3300028: Text
+    3300030: Text.001
+    3300032: Text.002
+    3300034: Text.003
+    4300000: BezierCircle
+    4300002: BezierCircle.008
+    4300004: BezierCircle.007
+    4300006: BezierCircle.006
+    4300008: BezierCircle.005
+    4300010: BezierCircle.004
+    4300012: BezierCircle.003
+    4300014: BezierCircle.002
+    4300016: BezierCircle.001
+    4300018: Plane.003
+    4300020: Plane.002
+    4300022: Text.003
+    4300024: Text.002
+    4300026: Text.001
+    4300028: Text
+    4300030: Plane.001
+    4300032: Plane
+    4300034: Cylinder
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
