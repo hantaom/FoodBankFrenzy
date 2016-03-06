@@ -110,14 +110,14 @@ public class GameController : MonoBehaviour {
     public void pause()
     {
         paused = !paused;
-        if (paused)
+        /*if (paused)
         {
             Time.timeScale = 0;
         }
         else
         {
             Time.timeScale = 1;
-        }
+        }*/
     }
 
     public string getDesiredCategory() { 

@@ -2,8 +2,10 @@
 using System.Collections;
 
 public class PauseScript : MonoBehaviour {
- 
+    bool paused;
     private GameController gameController;
+    
+    private Animator cameraAnimator;
     // Use this for initialization
     void Start()
     {
@@ -20,6 +22,18 @@ public class PauseScript : MonoBehaviour {
 	}
     public void Pause()
     {
+       
+
+        paused = !paused;
+        if (paused)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
+         
         gameController.pause();
 
     }
