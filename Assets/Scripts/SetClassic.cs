@@ -18,12 +18,13 @@ public class SetClassic : MonoBehaviour {
     {
 
         cameraAnimator.SetInteger(cameraState, 1);
+        Application.LoadLevel("ClassicMode");
         //this.gameObject.GetComponent<levelHandler> ().loadLevel (currentLevel);
 
     }
 
     // Update is called once per frame
     void Update () {
-	
+	    
 	}
 }
