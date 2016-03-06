@@ -1,5 +1,7 @@
 fileFormatVersion: 2
-guid: 84123bc876c7432429718878711dc15c
+guid: 4c48839c2fa1b47468ab5a62ce423be9
+timeCreated: 1457285324
+licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
@@ -79,7 +81,6 @@ ModelImporter:
     4300022: BezierCircle.003
     4300024: BezierCircle.002
     4300026: Cylinder
-    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -104,7 +105,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -138,7 +139,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
