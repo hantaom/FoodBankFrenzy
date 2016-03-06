@@ -38,6 +38,7 @@ public class GameController : MonoBehaviour {
     private int spawnWait;
     private int waveWait;
     private string desiredCategory;
+    int animationTime = 0;
 
 
 
@@ -169,6 +170,7 @@ public class GameController : MonoBehaviour {
     }
     void pickNewCategory(String category)
     {
+        animationTime = 0;
         if (category == "Fruit")
         {
             pickBetween("CannedFood", "Carbs");
@@ -194,6 +196,17 @@ public class GameController : MonoBehaviour {
     void updateText()
     {
         categoryText.text = desiredCategory + " Time!";
+        
+        if(animationTime < 100)
+        {
+            categoryText.transform.localScale += new Vector3(0.01F, 0.01F, 0.01F);
+            animationTime++;
+        }
+        else if(animationTime < 200)
+        {
+            categoryText.transform.localScale += new Vector3(-0.01F, -0.01F, -0.01F);
+            animationTime++;
+        }
     }
 
     GameObject randomFood()
